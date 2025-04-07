@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:tp_flutter/model/product.dart';
+import '../model/product.dart';
 
 class ApiService {
   Future<List<Product>> fetchProducts() async {
