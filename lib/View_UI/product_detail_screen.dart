@@ -14,6 +14,8 @@ class ProductDetailScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            Image.network(product.image, height: 250),
+            SizedBox(height: 20),
             Text(
               product.title,
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
@@ -25,7 +27,7 @@ class ProductDetailScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Text(
-              "Ceci est une description du produit.",
+              "Ceci est une description fictive du produit.",
               style: TextStyle(fontSize: 16),
             ),
           ],
