@@ -19,6 +19,7 @@ class ProductListScreen extends StatelessWidget {
             itemBuilder: (context, index) {
               final product = viewModel.products[index];
               return ListTile(
+                leading: Image.network(product.image, height: 50),
                 title: Text(product.title),
                 subtitle: Text("\$${product.price.toStringAsFixed(2)}"),
                 onTap: () {
